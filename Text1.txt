@@ -1,0 +1,10 @@
+Battery Charge Counter - simple solution
+for my beloved n97 mini
+(c) 2010-2018
+steshenko.d.s@gmail.com
+
+This serverapp have no GUI. 
+Auto start during OS boot.
+Will log all types of battery
+ status events in text file
+Data\BatteryChargeCounter\BCCLog.txt

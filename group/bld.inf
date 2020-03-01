@@ -1,0 +1,15 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : sds
+ Copyright   : Copyright (c) 2010-2017 steshenko.d.s@gmail.com
+ Description : This file provides the information required for building the
+				whole of a BatteryChargeCounter.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_MMPFILES
+BatteryChargeCounter.mmp

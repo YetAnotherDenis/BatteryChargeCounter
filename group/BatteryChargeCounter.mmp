@@ -1,0 +1,32 @@
+/*
+============================================================================
+ Name		: BatteryChargeCounter.mmp
+ Author	  : sds
+ Copyright   : Copyright (c) 2010-2017 steshenko.d.s@gmail.com
+ Description : This is the project specification file for BatteryChargeCounter.
+============================================================================
+*/
+
+TARGET		  BatteryChargeCounter.exe
+TARGETTYPE	  exe
+UID			 0 0xAABED6C8
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  BatteryChargeCounter.cpp
+
+LIBRARY		 euser.lib efsrv.lib
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+SOURCEPATH	  ..\data
+START RESOURCE HW_startup.rss
+END
+CAPABILITY LocalServices WriteDeviceData
+
+SOURCEPATH ..\src
+SOURCE SimpleServer.cpp batteryobserver.cpp
